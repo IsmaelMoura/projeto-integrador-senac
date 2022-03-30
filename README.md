@@ -9,7 +9,7 @@ Esse refere-se ao Projeto Integrador Senac - Exigido para conclus√£o do curso T√
 * Heder Santos
 * Ismael Moura
 
-## Professor Orientador;
+## Professores Orientadores;
 
 * Sirlene A. Santos
 * Denis N. Prates
