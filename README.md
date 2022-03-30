@@ -8,6 +8,7 @@ Esse projeto refere-se ao Projeto Integrador Senac - Exigido para conclusão do 
 * Djeniffer Vidal
 * Heder Santos
 * Ismael Moura
+* Maxswel Diniz
 
 ## Professores Orientadores;
 
