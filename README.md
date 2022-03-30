@@ -12,4 +12,5 @@ Esse refere-se ao Projeto Integrador Senac - Exigido para conclus√£o do curso T√
 ## Professor Orientador;
 
 * Sirlene A. Santos
+* Denis N. Prates
 
