@@ -1,5 +1,5 @@
 # projeto-integrador-senac
-Esse refere-se ao Projeto Integrador Senac - Exigido para conclusão do curso Técnico em Informática pela instituição Senac.
+Esse projeto refere-se ao Projeto Integrador Senac - Exigido para conclusão do curso Técnico em Informática pela instituição Senac.
 
 ## Alunos participantes do desenvolvimento;
 
