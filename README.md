@@ -1,2 +1,15 @@
 # projeto-integrador-senac
-Esse projeto é referente ao projeto integrador passado no final do curso de Técnico em Informática - Senac
+Esse refere-se ao Projeto Integrador Senac - Exigido para conclusão do curso Técnico em Informática pela instituição Senac.
+
+## Alunos participantes do desenvolvimento;
+
+* Aryon Rabello
+* Cassio Braga
+* Djeniffer Vidal
+* Heder Santos
+* Ismael Moura
+
+## Professor Orientador;
+
+* Sirlene A. Santos
+
