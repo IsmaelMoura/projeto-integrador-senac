@@ -6,11 +6,11 @@ Esse projeto refere-se ao Projeto Integrador Senac - Exigido para conclusão do 
 
 ## Alunos participantes do desenvolvimento;
 
-* Aryon Rabello
-* Cassio Braga
-* Djeniffer Vidal
-* Heder Santos
-* Ismael Moura
+* Aryon Rabello - CTO (Chief Technology Officer)
+* Cassio Braga - CFO (Chief Financial Officer)
+* Djeniffer Vidal - CCO (Chief Communications Officer)
+* Heder Santos - COO (Chief Operating Officer)
+* Ismael Moura - CEO (Chief Executive Officer)
 * Maxswel Diniz
 
 ## Professores Orientadores;
