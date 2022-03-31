@@ -2,7 +2,7 @@
 Esse projeto refere-se ao Projeto Integrador Senac - Exigido para conclusão do curso Técnico em Informática pela instituição Senac.
 
 ## Tema;
-* Consessionária de Luxo
+* Concessionária de Luxo
 
 ## Alunos participantes do desenvolvimento;
 
