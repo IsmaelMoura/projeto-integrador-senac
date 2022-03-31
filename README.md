@@ -18,20 +18,17 @@ Esse projeto refere-se ao Projeto Integrador Senac - Exigido para conclusão do 
 * Sirlene A. Santos
 * Denis N. Prates
 
-### Ferramentas;
+### Ferramentas e Códigos;
 
-* Github
-* Eclipse
-* Workbench
-* MySQL
-* Virtualbox
-* Visual Studio Code
-* Office
+Ferramentas   | Códigos
+--------- | ------
+Github | Java
+Eclipse | Java Script
+Workbench | SQL
+MySQL | HTML
+Vitual Box  | CSS
+Visual Studio Code |
+Photoshop |
+Office |
 
-### Códigos;
-
-* Java
-* HTML
-* CSS
-* Java Script
-* SQL
+          
