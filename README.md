@@ -11,12 +11,10 @@ Esse projeto refere-se ao Projeto Integrador Senac - Exigido para conclusão do 
 * <a href="https://github.com/Djenifer-Vidal">Djeniffer Vidal</a> - CCO (Chief Communications Officer)
 * <a href="https://github.com/MorcegoH">Heder Santos</a><a href=""></a> - COO (Chief Operating Officer)
 * <a href="https://github.com/IsmaelMoura">Ismael Moura</a> - CEO (Chief Executive Officer)
-* Maxswel Diniz
 
 ## Professores Orientadores;
 
 * Sirlene A. Santos
-* Denis N. Prates
 
 ### Ferramentas e Códigos;
 
