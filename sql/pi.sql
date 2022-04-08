@@ -31,9 +31,9 @@ CREATE TABLE carro(
 );
 
 CREATE TABLE solicitacao(
-	id_soli INT PRIMARY KEY AUTO_INCREMENT,
+    id_soli INT PRIMARY KEY AUTO_INCREMENT,
     data_soli TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    status_soli VARCHAR(50) NOT NULL,
+    status_soli VARCHAR(50) NOT NULL DEFAULT('Em andamento'),
     id_cli INT NOT NULL,
     FOREIGN KEY(id_cli) REFERENCES clientes(id_cli),
     id_ca INT NOT NULL,
