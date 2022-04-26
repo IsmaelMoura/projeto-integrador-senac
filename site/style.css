@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --green: #305353;
+  --black: #19191c;
+  --grey: #a9a9a9;
+  --white: #fffcf7;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-item .nav-link {
+    color: var(--green) !important;
+    font-weight: 600;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--black) !important;
+}
+
+.acessar {
+    border: 2px solid var(--green);
+    color: var(--green);
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.acessar:hover {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.cadastrar {
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.cadastrar:hover {
+    color: var(--grey);
+}
