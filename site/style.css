@@ -2,6 +2,7 @@
 
 :root {
   --green: #305353;
+  --light-green: #467878;
   --black: #19191c;
   --grey: #a9a9a9;
   --white: #fffcf7;
@@ -10,6 +11,8 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+/* Navbar CSS */
 
 .navbar-nav {
     margin-left: auto;
@@ -27,19 +30,21 @@
 }
 
 .nav-item .nav-link:hover {
-    color: var(--black) !important;
+    color: var(--light-green) !important;
 }
 
-.acessar {
+.acessar,
+.learn-more {
     border: 2px solid var(--green);
     color: var(--green);
     font-weight: 600;
     margin-right: 10px;
 }
 
-.acessar:hover {
-    border: 2px solid var(--black);
-    color: var(--black);
+.acessar:hover,
+.learn-more:hover {
+    border: 2px solid var(--light-green);
+    color: var(--light-green);
 }
 
 .cadastrar {
@@ -49,5 +54,76 @@
 }
 
 .cadastrar:hover {
-    color: var(--grey);
+    color: var(--light-green);
 }
+
+/* ----- */
+
+/* Container CSS */
+
+.section-1 {
+    padding-top: 40px;
+}
+
+.section-2 {
+    padding: 40px 30px 0;
+}
+
+.section-2 .card-desc,
+.section-4 .card-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.section-2 .card-desc h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-3,
+.section-4 {
+    margin-top: 150px;
+}
+
+.section-3 a {
+    width: 180px;
+    padding: 7px 0;
+}
+
+.section-3 h2 {
+    font-size: 34px;
+}
+
+.section-3 p {
+    font-size: 20px;
+}
+
+.section-4 h1 {
+    margin-bottom: 100px;
+}
+
+.section-4 img {
+    border-radius: 3px;
+}
+
+.section-4 .row {
+    margin-bottom: 100px;
+}
+
+.section-4 .card-desc {
+    align-items: center;
+}
+
+.learn-more {
+    width: 220px;
+}
+
+/* ----- */
+
+/* Login CSS */
+
+/* ----- */
+
+/* Responsive CSS */
