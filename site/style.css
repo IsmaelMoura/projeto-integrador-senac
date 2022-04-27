@@ -59,7 +59,7 @@
 
 /* ----- */
 
-/* Container CSS */
+/* Sections CSS */
 
 .section-1 {
     padding-top: 40px;
@@ -118,6 +118,57 @@
 
 .learn-more {
     width: 220px;
+}
+
+/* ----- */
+
+/* Footer CSS */
+
+.footer {
+    padding: 20px 80px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.footer-btn {
+    padding-top: 5px;
+}
+
+.footer-btn a {
+    width: 130px;
+}
+
+.social-media b {
+    margin-right: 50px;
+}
+
+.social-media a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.social-media .facebook {
+    background-color: blue;
+    margin-right: 15px;
+}
+
+.social-media .twitter {
+    background-color: cyan;
+    margin-right: 15px;
+}
+
+.social-media .instagram {
+    background-color: pink;
+    margin-right: 15px;
+}
+
+.social-media .linktree {
+    background-color: limegreen;
 }
 
 /* ----- */
