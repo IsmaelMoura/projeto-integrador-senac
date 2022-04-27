@@ -1,0 +1,402 @@
+controller
+
+package controller;
+
+import java.io.IOException;
+
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import model.DAO;
+import model.JavaBeans;
+
+/**
+ * Servlet implementation class Controller
+ */
+@WebServlet(urlPatterns = {"/Controller","/main","/inserir_usuario","/inserir_cliente"})
+public class Controller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	DAO dao = new DAO();
+	JavaBeans usuario = new JavaBeans();
+	
+	DAO dao1 = new DAO();
+	JavaBeans cliente = new JavaBeans();
+	
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Controller() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		//Teste e Conexão
+		//DAO dao = new DAO();
+		//dao.testeConexao();
+		String action = request.getServletPath();
+		System.out.println(action);
+			if (action.equals("/inserir_usuario")) {
+				novoUsuario(request,response);
+			} else if (action.equals("/inserir_cliente")) {
+				novoCliente(request,response);
+			} else {
+				response.sendRedirect("index.html");
+			}
+	}
+
+			
+	protected void novoCliente(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/*System.out.println(request.getParameter("nome"));
+		System.out.println(request.getParameter("email"));
+		System.out.println(request.getParameter("telefone"));
+		System.out.println(request.getParameter("senha"));*/
+		
+		this.cliente.setNome_cli(request.getParameter("nome"));
+		this.cliente.setEmail_cli(request.getParameter("email"));
+		this.cliente.setTelefone_cli(request.getParameter("telefone"));
+		this.cliente.setSenha_cli(request.getParameter("senha"));
+		
+		dao.inserirCliente(cliente);
+		
+		response.sendRedirect("");
+		
+	}
+	
+	protected void novoUsuario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/*System.out.println(request.getParameter("nome"));
+		System.out.println(request.getParameter("email"));
+		System.out.println(request.getParameter("telefone"));
+		System.out.println(request.getParameter("senha"));*/
+		
+		this.usuario.setNome_usu(request.getParameter("nome"));
+		this.usuario.setEmail_usu(request.getParameter("email"));
+		this.usuario.setSenha_usu(request.getParameter("senha"));
+		this.usuario.setPerfil_usu(request.getParameter("perfil"));
+		
+		dao.inserirUsuario(usuario);
+		
+		response.sendRedirect("");
+	
+	}
+}
+==========================================================================================================================
+novo=teste.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Agenda de Contatos</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="img/contacts_icon_64.png">
+</head>
+<body>
+	
+	<h1>Criar Novo Contato</h1>
+	<form name="frmCliente" action="inserir_cliente">
+		<table>
+			<tr>
+				<td><input type="text" name="nome" placeholder="nome" class="Caixa1"></td>
+			</tr>
+			
+			<tr>
+				<td><input type="text" name="email" placeholder="email" class="Caixa2"></td>
+			</tr>
+			
+			<tr>
+				<td><input type="text" name="telefone" placeholder="telefone" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="senha" placeholder="senha" class="Caixa1"></td>
+			</tr>
+			
+		</table>
+		
+		<input type="submit" value = "Adicionar" class="botao1" onclick="validar()">
+	</form>
+		<script src="scripts/Validador.js"></script>
+</body>
+</html>
+===========================================================================================================================
+validador.js
+
+/**
+ * 
+ */
+ function validar(){
+	let nome = frmCliente.nome.value;
+	let telefone = frmCliente.telefone.value;
+	
+	if (nome === ""){
+		alert("Campo nome Obrigatório");
+		frmCliente.nome.focus();
+	}
+	else 
+		if (telefone === "") {
+			alert("Campo fone Obrigatório");
+			frmCliente.telefone.focus();
+		}
+	else
+		document.forms["frmCliente"].submit;
+}
+
+===========================================================================================================================
+javabeans.java
+package model;
+
+public class JavaBeans {
+
+	private String id_cli;
+	private String nome_cli;
+	private String email_cli;
+	private String telefone_cli;
+	private String senha_cli;
+
+	private String id_usu;
+	private String nome_usu;
+	private String email_usu;
+	private String senha_usu;
+	private String perfil_usu;
+	
+	public JavaBeans() {
+		super();
+	}
+	
+	public JavaBeans(String id_cli, String nome_cli, String email_cli, String telefone_cli, String senha_cli,
+			String id_usu, String nome_usu, String email_usu, String senha_usu, String perfil_usu) {
+		super();
+		this.id_cli = id_cli;
+		this.nome_cli = nome_cli;
+		this.email_cli = email_cli;
+		this.telefone_cli = telefone_cli;
+		this.senha_cli = senha_cli;
+		this.id_usu = id_usu;
+		this.nome_usu = nome_usu;
+		this.email_usu = email_usu;
+		this.senha_usu = senha_usu;
+		this.perfil_usu = perfil_usu;
+	}
+
+	public String getId_cli() {
+		return id_cli;
+	}
+
+	public void setId_cli(String id_cli) {
+		this.id_cli = id_cli;
+	}
+
+	public String getNome_cli() {
+		return nome_cli;
+	}
+
+	public void setNome_cli(String nome_cli) {
+		this.nome_cli = nome_cli;
+	}
+
+	public String getEmail_cli() {
+		return email_cli;
+	}
+
+	public void setEmail_cli(String email_cli) {
+		this.email_cli = email_cli;
+	}
+
+	public String getTelefone_cli() {
+		return telefone_cli;
+	}
+
+	public void setTelefone_cli(String telefone_cli) {
+		this.telefone_cli = telefone_cli;
+	}
+
+	public String getSenha_cli() {
+		return senha_cli;
+	}
+
+	public void setSenha_cli(String senha_cli) {
+		this.senha_cli = senha_cli;
+	}
+
+	public String getId_usu() {
+		return id_usu;
+	}
+
+	public void setId_usu(String id_usu) {
+		this.id_usu = id_usu;
+	}
+
+	public String getNome_usu() {
+		return nome_usu;
+	}
+
+	public void setNome_usu(String nome_usu) {
+		this.nome_usu = nome_usu;
+	}
+
+	public String getEmail_usu() {
+		return email_usu;
+	}
+
+	public void setEmail_usu(String email_usu) {
+		this.email_usu = email_usu;
+	}
+
+	public String getSenha_usu() {
+		return senha_usu;
+	}
+
+	public void setSenha_usu(String senha_usu) {
+		this.senha_usu = senha_usu;
+	}
+
+	public String getPerfil_usu() {
+		return perfil_usu;
+	}
+
+	public void setPerfil_usu(String perfil_usu) {
+		this.perfil_usu = perfil_usu;
+	}
+
+}
+
+===========================================================================================================================
+style.css
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+body{
+	font-family: 'Square Peg', cursive;
+	font-size: 3em;
+	
+}
+
+h1{
+	color: blue;
+}
+
+.Botao1{
+	text-decoration: none;
+	background-color: blue;
+	padding: 5px,10px,5px,10px;
+	color: white;
+	border-radius: 5px;
+}
+
+.Caixa1{
+	width: 320px;
+	
+}
+
+.Caixa2{
+	width: 100px;
+	
+}
+
+===========================================================================================================================
+DAO.java
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class DAO {
+	// Parametros de conexão
+	private String driver="com.mysql.cj.jdbc.Driver";
+	private String url="jdbc:mysql://127.0.0.1:3306/projetoint?useTimezone=true&serverTimezone=UTC";
+	private String user="root";
+	private String password="";
+	
+	// Conexão
+	private Connection conectar() {
+		Connection con = null;
+		try {
+			Class.forName(driver);
+			con =DriverManager.getConnection(url, user, password);
+			return con;
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+			return null;
+		}
+	}
+	
+	public void inserirCliente(JavaBeans cliente) {
+		String SQLinsert = "insert into clientes(nome,email,telefone,senha) values (?,?,?,?);";
+		
+			try {
+				Connection con = conectar();
+				
+				// Preparar a Query
+				PreparedStatement pst = con.prepareStatement(SQLinsert);
+				
+				// Substituir as ?
+				pst.setString(1, cliente.getNome_cli());
+				pst.setString(2, cliente.getEmail_cli());
+				pst.setString(3, cliente.getTelefone_cli());
+				pst.setString(4, cliente.getSenha_cli());
+				
+				//Executar SQL
+				pst.executeUpdate();
+				
+				//Encerrar a concexãocon.close();
+				con.close();
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println(e);
+			}
+	}
+	
+	public void inserirUsuario(JavaBeans usuario) {
+		String SQLinsert = "insert into usuarios(nome,email,senha,perfil) values (?,?,?,?);";
+		
+			try {
+				Connection con = conectar();
+				
+				// Preparar a Query
+				PreparedStatement pst = con.prepareStatement(SQLinsert);
+				
+				// Substituir as ?
+				pst.setString(1, usuario.getNome_usu());
+				pst.setString(2, usuario.getEmail_usu());
+				pst.setString(3, usuario.getSenha_usu());
+				pst.setString(4, usuario.getPerfil_usu());
+				
+				//Executar SQL
+				pst.executeUpdate();
+				
+				//Encerrar a concexãocon.close();
+				con.close();
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println(e);
+			}
+	}
+	
+	
+	/*
+	public void testeConexao() {
+		try {
+			Connection con=conectar();
+			System.out.println(con);
+			con.close();			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+			
+		}
+	}*/
+}
