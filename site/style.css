@@ -124,6 +124,23 @@
 
 /* Login CSS */
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-text{
+    text-align: center;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ----- */
 
 /* Responsive CSS */
