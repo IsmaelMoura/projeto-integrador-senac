@@ -54,7 +54,8 @@
 }
 
 .cadastrar:hover {
-    color: var(--light-green);
+    background-color: var(--light-green);
+    color: var(--white);
 }
 
 /* ----- */
@@ -141,6 +142,14 @@
     width: 130px;
 }
 
+.footer-btn .cadastrar {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    justify-content: flex-end;
+}
+
 .social-media b {
     margin-right: 50px;
 }
@@ -153,45 +162,109 @@
 }
 
 .social-media .facebook {
-    background-color: blue;
     margin-right: 15px;
 }
 
 .social-media .twitter {
-    background-color: cyan;
     margin-right: 15px;
 }
 
 .social-media .instagram {
-    background-color: pink;
     margin-right: 15px;
-}
-
-.social-media .linktree {
-    background-color: limegreen;
 }
 
 /* ----- */
 
-/* Login CSS */
+/* Cadastrar CSS */
 
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cadastrar-container {
+    height: calc(100vh - 62px);
 }
 
-.main-text{
+.cadastrar-container form button {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.cadastrar-container form button:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+.cadastrar-title {
     text-align: center;
 }
 
-.submit{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cadastrar-form {
+    width: 700px;
+}
+
+.login-desc a {
+    color: var(--green);
+}
+
+.login-desc a:hover {
+    color: var(--light-green);
 }
 
 /* ----- */
 
 /* Responsive CSS */
+
+@media (max-width: 991.98px) {
+
+    /* Sections Responsive CSS */
+
+    .section-3 p {
+        padding: 20px 0;
+    }
+
+    /* ----- */
+
+    /* Footer Responsive CSS */
+
+    .footer-title {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .footer-phone,
+    .footer-address,
+    .footer-link {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-btn .cadastrar {
+        margin: 0 10px 0 0;
+    }
+
+    .social-media-desc {
+        justify-content: center;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ----- */
+
+    /* Cadastrar Responsive CSS */
+
+    .cadastrar-form {
+        width: auto;
+    }
+
+    /* ----- */
+
+}
+
+/* ----- */

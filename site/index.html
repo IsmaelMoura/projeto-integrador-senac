@@ -29,10 +29,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre nós</a>
+              <a class="nav-link" href="#about-us">Sobre nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Carros</a>
+              <a class="nav-link" href="#cars">Carros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contato</a>
@@ -69,7 +69,7 @@
           </div>
         </section>
 
-        <section class="section-3">
+        <section class="section-3" id="reservation">
           <div class="row">
             <div
               class="col-lg-7 col-sm-12 d-flex flex-column align-items-center"
@@ -83,13 +83,13 @@
             <div
               class="col-lg-5 col-sm-12 d-flex justify-content-center align-items-end mb-lg-4 mb-sm-0"
             >
-              <a class="btn acessar" type="submit">Acessar</a>
-              <a class="btn cadastrar" type="submit">Cadastrar</a>
+              <a href="acessar.html" class="btn acessar" type="submit">Acessar</a>
+              <a href="cadastrar.html" class="btn cadastrar" type="submit">Cadastrar</a>
             </div>
           </div>
         </section>
 
-        <section class="section-4">
+        <section class="section-4" id="cars">
           <h1 class="text-center">Nossos automóveis</h1>
 
           <div class="row">
@@ -108,17 +108,13 @@
                 unde alias ea modi reprehenderit. Neque quidem voluptate maiores
                 harum temporibus? Illo?
               </p>
-              <a class="btn learn-more" type="submit">Saiba mais</a>
+              <a href="https://www.alfaromeo.com/" target="_blank" class="btn learn-more" type="submit">Saiba mais</a>
             </div>
           </div>
 
           <div class="row">
             <div class="col-lg-6 col-sm-12">
-              <img
-                src="img/bugatti_1.png"
-                alt="Bugatti"
-                class="img-fluid"
-              />
+              <img src="img/bugatti_1.png" alt="Bugatti" class="img-fluid" />
             </div>
             <div class="col-lg-6 col-sm-12 card-desc">
               <h2 class="text-center">Bugatti</h2>
@@ -128,17 +124,13 @@
                 unde alias ea modi reprehenderit. Neque quidem voluptate maiores
                 harum temporibus? Illo?
               </p>
-              <a class="btn learn-more" type="submit">Saiba mais</a>
+              <a href="https://www.bugatti.com/" target="_blank" class="btn learn-more" type="submit">Saiba mais</a>
             </div>
           </div>
 
           <div class="row">
             <div class="col-lg-6 col-sm-12 order-lg-2 order-sm-1">
-              <img
-                src="img/ferrari_1.png"
-                alt="Ferrari"
-                class="img-fluid"
-              />
+              <img src="img/ferrari_1.png" alt="Ferrari" class="img-fluid" />
             </div>
             <div class="col-lg-6 col-sm-12 card-desc order-lg-1 order-sm-2">
               <h2 class="text-center">Ferrari</h2>
@@ -148,17 +140,13 @@
                 unde alias ea modi reprehenderit. Neque quidem voluptate maiores
                 harum temporibus? Illo?
               </p>
-              <a class="btn learn-more" type="submit">Saiba mais</a>
+              <a href="https://www.ferrari.com/en-BR" target="_blank" class="btn learn-more" type="submit">Saiba mais</a>
             </div>
           </div>
 
           <div class="row">
             <div class="col-lg-6 col-sm-12">
-              <img
-                src="img/porsche_1.png"
-                alt="Porsche"
-                class="img-fluid"
-              />
+              <img src="img/porsche_1.png" alt="Porsche" class="img-fluid" />
             </div>
             <div class="col-lg-6 col-sm-12 card-desc">
               <h2 class="text-center">Porsche</h2>
@@ -168,7 +156,7 @@
                 unde alias ea modi reprehenderit. Neque quidem voluptate maiores
                 harum temporibus? Illo?
               </p>
-              <a class="btn learn-more" type="submit">Saiba mais</a>
+              <a href="https://www.porsche.com/brazil/pt/" target="_blank" class="btn learn-more" type="submit">Saiba mais</a>
             </div>
           </div>
         </section>
@@ -176,44 +164,51 @@
     </div>
 
     <footer class="container-fluid footer bg-light">
-        <div class="row">
-          <div class="col-lg-8 col-sm-12 d-flex align-items-center">
-            <p class="h2">Rabello</p>
-          </div>
-          <div class="col-lg-1 col-sm-12">
-            <p class="h5">Telefone</p>
-            <p class="mb-0">(11) 9 3333-4444</p>
-            <p>(11) 2222-3333</p>
-          </div>
-          <div class="col-lg-1 col-sm-12">
-            <p class="h5">Endereço</p>
-            <p>Rua dos Andes, 123 - Jardim Maravilha, São Paulo - SP, 12345-678</p>
-          </div>
-          <div class="col-lg-1 col-sm-12 footer-link">
-            <p class="h5">Company</p>
-            <p class="mb-0"><a href="#about-us">Sobre nós</a></p>
-            <p><a href="#about-us">Faça sua reserva</a></p>
-          </div>
-          <div class="col-lg-1 col-sm-12 footer-btn">
-            <a class="btn cadastrar mb-3" type="submit">Cadastrar</a>
-            <a class="btn acessar" type="submit">Acessar</a>
-          </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 d-flex align-items-center footer-title">
+          <p class="h2">Rabello</p>
+        </div>
+        <div class="col-lg-2 col-sm-12 footer-phone">
+          <p class="h5">Telefone</p>
+          <p class="mb-0">(11) 9 3333-4444</p>
+          <p>(11) 2222-3333</p>
+        </div>
+        <div class="col-lg-2 col-sm-12 footer-address">
+          <p class="h5">Endereço</p>
+          <p>
+            Rua dos Andes, 123 - Jardim Maravilha, São Paulo - SP, 12345-678
+          </p>
+        </div>
+        <div class="col-lg-2 col-sm-12 footer-link">
+          <p class="h5">Company</p>
+          <p class="mb-0"><a href="#about-us">Sobre nós</a></p>
+          <p><a href="acessar.html">Faça sua reserva</a></p>
+        </div>
+        <div class="col-lg-2 col-sm-12 footer-btn">
+          <a href="cadastrar.html" class="btn cadastrar" type="submit">Cadastrar</a>
+          <a href="acessar.html" class="btn acessar" type="submit">Acessar</a>
+        </div>
+      </div>
+
+      <div class="row border-top pt-5">
+        <div
+          class="col-lg-9 col-sm-12 d-flex align-items-center social-media-desc"
+        >
+          <p>
+            Site desenvolvido com fins educationais | Senac Tatuapé | Curso
+            Técnico em Informática
+          </p>
         </div>
 
-        <div class="row border-top pt-5">
-          <div class="col-lg-9 col-sm-12 d-flex align-items-center">
-            <p>Site desenvolvido com fins educationais | Senac Tatuapé | Curso Técnico em Informática</p>
-          </div>
-
-          <div class="col-lg-3 col-sm-12 social-media d-flex justify-content-end">
-            <b>Follow us:</b>
-            <a href="#" class="facebook"></a>
-            <a href="#" class="twitter"></a>
-            <a href="#" class="instagram"></a>
-            <a href="#" class="linktree"></a>
-          </div>
+        <div class="col-lg-3 col-sm-12 social-media d-flex">
+          <b>Follow us:</b>
+          <a href="#" class="facebook"><img class="img-fluid" src="img/facebook.png" alt="Facebook"></a>
+          <a href="#" class="twitter"><img class="img-fluid" src="img/twitter.png" alt="Twitter"></a>
+          <a href="#" class="instagram"><img class="img-fluid" src="img/instagram.png" alt="instagram"></a>
+          <a href="#" class="linktree"><img class="img-fluid" src="img/linktree.png" alt="Linktree"></a>
         </div>
-      </footer>
+      </div>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
