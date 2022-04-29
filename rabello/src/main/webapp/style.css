@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --green: #305353;
+  --light-green: #467878;
+  --black: #19191c;
+  --grey: #a9a9a9;
+  --white: #fffcf7;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar CSS */
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-item .nav-link {
+    color: var(--green) !important;
+    font-weight: 600;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--light-green) !important;
+}
+
+.acessar,
+.learn-more {
+    border: 2px solid var(--green);
+    color: var(--green);
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.acessar:hover,
+.learn-more:hover {
+    border: 2px solid var(--light-green);
+    color: var(--light-green);
+}
+
+.cadastrar {
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.cadastrar:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+/* ----- */
+
+/* Sections CSS */
+
+.section-1 {
+    padding-top: 40px;
+}
+
+.section-2 {
+    padding: 40px 30px 0;
+}
+
+.section-2 .card-desc,
+.section-4 .card-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.section-2 .card-desc h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-3,
+.section-4 {
+    margin-top: 150px;
+}
+
+.section-3 a {
+    width: 180px;
+    padding: 7px 0;
+}
+
+.section-3 h2 {
+    font-size: 34px;
+}
+
+.section-3 p {
+    font-size: 20px;
+}
+
+.section-4 h1 {
+    margin-bottom: 100px;
+}
+
+.section-4 img {
+    border-radius: 3px;
+}
+
+.section-4 .row {
+    margin-bottom: 100px;
+}
+
+.section-4 .card-desc {
+    align-items: center;
+}
+
+.learn-more {
+    width: 220px;
+}
+
+/* ----- */
+
+/* Footer CSS */
+
+.footer {
+    padding: 20px 80px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.footer-btn {
+    padding-top: 5px;
+}
+
+.footer-btn a {
+    width: 130px;
+}
+
+.footer-btn .cadastrar {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    justify-content: flex-end;
+}
+
+.social-media b {
+    margin-right: 50px;
+}
+
+.social-media a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.social-media .facebook {
+    margin-right: 15px;
+}
+
+.social-media .twitter {
+    margin-right: 15px;
+}
+
+.social-media .instagram {
+    margin-right: 15px;
+}
+
+/* ----- */
+
+/* Cadastrar CSS */
+
+.cadastrar-container {
+    height: calc(100vh - 62px);
+}
+
+.cadastrar-container form button {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.cadastrar-container form button:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+.cadastrar-title {
+    text-align: center;
+}
+
+.cadastrar-form {
+    width: 700px;
+}
+
+.login-desc a {
+    color: var(--green);
+}
+
+.login-desc a:hover {
+    color: var(--light-green);
+}
+
+/* ----- */
+
+/* Responsive CSS */
+
+@media (max-width: 991.98px) {
+
+    /* Sections Responsive CSS */
+
+    .section-3 p {
+        padding: 20px 0;
+    }
+
+    /* ----- */
+
+    /* Footer Responsive CSS */
+
+    .footer-title {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .footer-phone,
+    .footer-address,
+    .footer-link {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-btn .cadastrar {
+        margin: 0 10px 0 0;
+    }
+
+    .social-media-desc {
+        justify-content: center;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ----- */
+
+    /* Cadastrar Responsive CSS */
+
+    .cadastrar-form {
+        width: auto;
+    }
+
+    /* ----- */
+
+}
+
+/* ----- */
