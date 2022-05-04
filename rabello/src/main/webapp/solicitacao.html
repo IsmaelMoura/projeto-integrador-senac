@@ -53,42 +53,19 @@
       </section>
 
       <form
-        class="container needs-validation cadastrar-form border rounded p-3" action="logar"
+        class="container needs-validation cadastrar-form border rounded p-3"
         novalidate
       >
-        <div class="row">
-          <div class="mb-3">
-            <label for="validationCustomEmail">E-mail</label>
-            <div class="input-group">
-              <input
-                type="email"
-                class="form-control input-email"
-                id="validationCustomEmail"
-                placeholder="Ex.: jose@email.com"
-                name="email_login"
-                aria-describedby="inputGroupPrepend"
-                required
-              />
-              <div class="valid-feedback">Parece bom!</div>
-              <div class="invalid-feedback">Por favor coloque o e-mail.</div>
-            </div>
-          </div>
+        <div class="row mb-3">
+            <select class="form-select" aria-label="Default select example" name="carro_solicitacao">
+                <option selected>Open this select menu</option>
+                <option value="alfa romeo">Alfa Romeo</option>
+                <option value="bugatti">Bugatti</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="porsche">Porsche</option>
+              </select>
         </div>
-        <div class="row">
-          <div class="mb-3">
-            <label for="validationCustom03">Senha</label>
-            <input
-              type="password"
-              class="form-control input-senha"
-              id="validationCustom03"
-              name="senha_login"
-              placeholder="Senha"
-              required
-            />
-            <div class="invalid-feedback">Por favor coloque a senha.</div>
-          </div>
-        </div>
-        <a href="main">dsadsa<button class="btn mb-3" type="submit">Acessar</button></a>
+        <button class="btn mb-3" type="submit">Acessar</button>
         <p class="mb-0 login-desc">
           Não é cadastrado?
           <a href="cadastrar.html" class="text-decoration-none">Cadastrar</a>
