@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,11 +29,11 @@
 					<a href="admin.jsp" class="nav_link active"> <i
 						class="fa-solid fa-users"></i> <span class="nav_name">Clientes</span>
 					</a> <a href="#" class="nav_link"> <i
-						class="fa-solid fa-user-group"></i> <span class="nav_name">Usuários</span>
+						class="fa-solid fa-user-group"></i> <span class="nav_name">UsuÃ¡rios</span>
 					</a> <a href="#" class="nav_link nav-car"> <i
 						class="fa-solid fa-car"></i> <span class="nav_name">Carros</span>
 					</a> <a href="#" class="nav_link nav-req"> <i
-						class="fa-solid fa-clipboard"></i> <span class="nav_name">Solicitações</span>
+						class="fa-solid fa-clipboard"></i> <span class="nav_name">SolicitaÃ§Ãµes</span>
 					</a>
 				</div>
 			</div>
@@ -47,9 +50,7 @@
 	<main class="main">
 
 		<form
-        class="container needs-validation cadastrar-form border rounded p-3" action="update"
-        novalidate
-      >
+        class="container needs-validation cadastrar-form border rounded p-3" action="update" novalidate>
       	<div class="row">
           <div class="mb-3">
             <label for="id">ID</label>
@@ -58,9 +59,9 @@
               class="form-control input-nome"
               id="id"
               name="id_cli"
-              placeholder="Ex.: José"
+              placeholder="Ex.: JosÃ©"
               value="<% out.print(request.getAttribute("id_cli")); %>"
-              disabled
+              readonly
             />
             <div class="valid-feedback">Parece bom!</div>
             <div class="invalid-feedback">Por favor coloque seu nome.</div>
@@ -74,7 +75,7 @@
               class="form-control input-nome"
               id="validationCustom01"
               name="nome_cli"
-              placeholder="Ex.: José"
+              placeholder="Ex.: JosÃ©"
               value="<% out.print(request.getAttribute("nome_cli")); %>"
               required
             />

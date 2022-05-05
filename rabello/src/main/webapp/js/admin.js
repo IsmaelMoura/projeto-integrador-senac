@@ -9,3 +9,11 @@ toggleBtn.addEventListener('click', () => {
     headerPadding.classList.toggle('body-pd')
     toggleBtn.classList.toggle('fa-xmark')
 })
+
+const confirmar = (id_cli) => {
+	let resposta = confirm("Deseja deletar?");
+	
+	if(resposta === true) {
+		window.location.href = `delete?id_cli=${id_cli}`;
+	}
+}
