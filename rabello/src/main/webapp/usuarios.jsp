@@ -32,7 +32,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("usuari
 		<div class="header_toggle">
 			<i class="fa-solid fa-bars" id="header_toggle"></i>
 		</div>
-		<b class="header-page w-100 text-center">Clientes</b>
+		<b class="header-page w-100 text-center">Usuários</b>
 	</header>
 	<div class="l-navbar" id="nav-bar">
 		<nav class="nav">
@@ -40,26 +40,23 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("usuari
 				<a href="#" class="nav_logo"> <span class="nav_logo-name">Rabello</span>
 				</a>
 				<div class="nav_list">
-					<a href="main" class="nav_link"> <i
-						class="fa-solid fa-users"></i> <span class="nav_name">Clientes</span>
-					</a> <a href="mainusu" class="nav_link active"> <i
-						class="fa-solid fa-user-group"></i> <span class="nav_name">Usuários</span>
-					</a> <a href="#" class="nav_link nav-req"> <i
+                <a href="main" class="nav_link active">
+                  <i class="fa-solid fa-users"></i>
+                  <span class="nav_name">Clientes</span>
+                </a>
+                <a href="mainusu" class="nav_link">
+                  <i class="fa-solid fa-user-group"></i>
+                  <span class="nav_name">Usuários</span>
+                </a>
+                <a href="cadastrarusu.html" class="nav_link nav-req"> <i
 						class="fa-solid fa-clipboard"></i> <span class="nav_name">Cadastrar usuário</span>
-					</a> <a href="#" class="nav_link nav-car"> <i
-						class="fa-solid fa-car"></i> <span class="nav_name">Carros</span>
-					</a> <a href="#" class="nav_link nav-req"> <i
-						class="fa-solid fa-clipboard"></i> <span class="nav_name">Solicitações</span>
 					</a>
-				</div>
+                <a href="mainsoli" class="nav_link nav-req">
+                  <i class="fa-solid fa-clipboard-user"></i>
+                  <span class="nav_name">Solicitações</span>
+                </a>
+              </div>
 			</div>
-			<a href="#" class="nav_link"> <i
-				class="fa-solid fa-right-from-bracket"></i> <span
-				class="user-info d-flex flex-column">
-					<p class="nav-name">Nome: XXX</p>
-					<p class="nav-name">Perfil: ZZZ</p>
-			</span>
-			</a>
 		</nav>
 	</div>
 

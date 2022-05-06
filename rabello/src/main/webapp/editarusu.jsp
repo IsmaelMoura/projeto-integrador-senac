@@ -26,24 +26,23 @@
 				<a href="#" class="nav_logo"> <span class="nav_logo-name">Rabello</span>
 				</a>
 				<div class="nav_list">
-					<a href="admin.jsp" class="nav_link active"> <i
-						class="fa-solid fa-users"></i> <span class="nav_name">Clientes</span>
-					</a> <a href="#" class="nav_link"> <i
-						class="fa-solid fa-user-group"></i> <span class="nav_name">Usuários</span>
-					</a> <a href="#" class="nav_link nav-car"> <i
-						class="fa-solid fa-car"></i> <span class="nav_name">Carros</span>
-					</a> <a href="#" class="nav_link nav-req"> <i
-						class="fa-solid fa-clipboard"></i> <span class="nav_name">Solicitações</span>
+                <a href="main" class="nav_link active">
+                  <i class="fa-solid fa-users"></i>
+                  <span class="nav_name">Clientes</span>
+                </a>
+                <a href="mainusu" class="nav_link">
+                  <i class="fa-solid fa-user-group"></i>
+                  <span class="nav_name">Usuários</span>
+                </a>
+                <a href="cadastrarusu.html" class="nav_link nav-req"> <i
+						class="fa-solid fa-clipboard"></i> <span class="nav_name">Cadastrar usuário</span>
 					</a>
-				</div>
+                <a href="mainsoli" class="nav_link nav-req">
+                  <i class="fa-solid fa-clipboard-user"></i>
+                  <span class="nav_name">Solicitações</span>
+                </a>
+              </div>
 			</div>
-			<a href="#" class="nav_link"> <i
-				class="fa-solid fa-right-from-bracket"></i> <span
-				class="user-info d-flex flex-column">
-					<p class="nav-name">Nome: XXX</p>
-					<p class="nav-name">Perfil: ZZZ</p>
-			</span>
-			</a>
 		</nav>
 	</div>
 
@@ -114,7 +113,6 @@
 					<label for="profile" class="form-label">Perfil</label> <select
 						class="form-select" id="profile" name="perfil_usu"
 						value="<% out.print(request.getAttribute("perfil_usu")); %>" required>
-						<option selected disabled>Escolha...</option>
 						<option value="usuario">Usuário</option>
 						<option value="admin">Administrador</option>
 					</select>

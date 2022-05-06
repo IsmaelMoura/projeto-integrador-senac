@@ -46,23 +46,15 @@
                   <i class="fa-solid fa-user-group"></i>
                   <span class="nav_name">Usuários</span>
                 </a>
-                <a href="#" class="nav_link nav-car">
-                  <i class="fa-solid fa-car"></i>
-                  <span class="nav_name">Carros</span>
-                </a>
-                <a href="#" class="nav_link nav-req">
-                  <i class="fa-solid fa-clipboard"></i>
+                <a href="cadastrarusu.html" class="nav_link nav-req"> <i
+						class="fa-solid fa-clipboard"></i> <span class="nav_name">Cadastrar usuário</span>
+					</a>
+                <a href="mainsoli" class="nav_link nav-req">
+                  <i class="fa-solid fa-clipboard-user"></i>
                   <span class="nav_name">Solicitações</span>
                 </a>
               </div>
             </div>
-            <a href="#" class="nav_link">
-              <i class="fa-solid fa-right-from-bracket"></i>
-              <span class="user-info d-flex flex-column">
-                <p class="nav-name">Nome: XXX</p>
-                <p class="nav-name">Perfil: ZZZ</p>
-              </span>
-            </a>
           </nav>
         </div>
 
