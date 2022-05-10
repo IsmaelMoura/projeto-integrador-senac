@@ -36,9 +36,14 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("solici
 						<span class="nav_name">Clientes</span>
 					</a> <a href="mainusu" class="nav_link"> <i
 						class="fa-solid fa-user-group"></i> <span class="nav_name">Usuários</span>
+					</a> <a href="maincar" class="nav_link"> <i
+						class="fa-solid fa-cars"></i> <span class="nav_name">Carros</span>
 					</a> <a href="cadastrarusu.html" class="nav_link nav-req"> <i
 						class="fa-solid fa-clipboard"></i> <span class="nav_name">Cadastrar
 							usuário</span>
+					</a> <a href="carros/cadastrarcar.html" class="nav_link nav-req"> <i
+						class="fa-solid fa-clipboard"></i> <span class="nav_name">Cadastrar
+							carro</span>
 					</a> <a href="mainsoli" class="nav_link nav-req active"> <i
 						class="fa-solid fa-clipboard-user"></i> <span class="nav_name">Solicitações</span>
 					</a>
@@ -51,13 +56,16 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("solici
 		<%
 		for (int i = 0; i < lista.size(); i++) {
 		%>
-		<div class="row client-card d-flex align-items-center justify-content-between">
+		<div
+			class="row client-card d-flex align-items-center justify-content-between">
 			<b class="client-id col-md-3 col-12"><%=lista.get(i).getId_soli()%></b>
 			<b class="client-name col-md-3 col-12"><%=lista.get(i).getNome_soli()%></b>
 			<b class="client-name col-md-3 col-12"><%=lista.get(i).getEmail_soli()%></b>
 			<b class="client-name col-md-3 col-12"><%=lista.get(i).getCarro_soli()%></b>
 		</div>
-		<% } %>
+		<%
+		}
+		%>
 	</main>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
