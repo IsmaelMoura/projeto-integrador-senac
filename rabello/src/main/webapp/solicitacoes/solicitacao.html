@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../style.css" />
+<title>Rabello - Solicitação</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Rabello</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#about-us">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#cars">Carros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#footer">Contato</a>
+            </li>
+          </ul>
+			</div>
+		</div>
+	</nav>
+
+	<div
+		class="container d-flex flex-column align-items-center justify-content-center cadastrar-container">
+		<section class="cadastrar-title mb-5">
+			<h1>Faça sua solicitação</h1>
+		</section>
+
+		<form
+			class="container needs-validation cadastrar-form border rounded p-3"
+			action="../solicitar" novalidate>
+			<div class="row">
+				<div class="mb-3">
+					<label for="validationCustomName">Nome</label> <input type="text"
+						class="form-control input-nome" id="validationCustom01"
+						name="nome_soli" placeholder="Ex.: José" required />
+					<div class="valid-feedback">Parece bom!</div>
+					<div class="invalid-feedback">Por favor coloque seu nome.</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="mb-3">
+					<label for="validationCustomEmail">E-mail</label>
+					<div class="input-group">
+						<input type="email" class="form-control input-email"
+							id="validationCustomEmail" placeholder="Ex.: jose@email.com"
+							name="email_soli" aria-describedby="inputGroupPrepend" required />
+						<div class="valid-feedback">Parece bom!</div>
+						<div class="invalid-feedback">Por favor coloque o e-mail.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="mb-3">
+					<label for="car" class="form-label">Carro</label> 
+					<select class="form-select" id="car" name="carro_soli" required>
+						<option value="Alfa Romeo">Alfa Romeo</option>
+						<option value="Bugatti">Bugatti</option>
+						<option value="Ferrari">Ferrari</option>
+						<option value="Porsche">Porsche</option>
+					</select>
+					<div class="valid-feedback">Parece bom!</div>
+					<div class="invalid-feedback">Por favor coloque o carro.</div>
+				</div>
+			</div>
+			<button class="btn mb-3" type="submit">Fazer solicitação</button>
+		</form>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
