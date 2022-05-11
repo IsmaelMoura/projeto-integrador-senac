@@ -1,7 +1,6 @@
 /*
 	Script do projeto integrador de concessionário de luxo;
     Curso Técnico de Informática - Senac Tatuapé;
-
 	Participantes:
 		Aryon Rabello
         Ismael Moura
@@ -22,6 +21,7 @@ CREATE TABLE usuarios(
     id_usu INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(32) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
+    telefone VARCHAR(20) NOT NULL,
     senha VARCHAR(300) NOT NULL,
     perfil VARCHAR(50) NOT NULL
 );
@@ -35,37 +35,42 @@ CREATE TABLE clientes(
 );
 
 CREATE TABLE carros(
-    id_ca INT PRIMARY KEY AUTO_INCREMENT,
+    id_car INT PRIMARY KEY AUTO_INCREMENT,
     fabricante VARCHAR(32) NOT NULL,
     modelo VARCHAR(32) NOT NULL,
     ano VARCHAR(4) NOT NULL,
     cor VARCHAR(32) NOT NULL,
-    chassi VARCHAR(17) UNIQUE,
-    valor DECIMAL(50, 2),
     combustivel VARCHAR(32) NOT NULL,
-    data_cad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    id_usu INT NOT NULL,
-    FOREIGN KEY(id_usu) REFERENCES usuarios(id_usu)
+    valor DECIMAL(50, 2),
+    data_cad TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE solicitacao(
 	id_soli INT PRIMARY KEY AUTO_INCREMENT,
     data_soli TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    status_soli VARCHAR(50) NOT NULL DEFAULT('Em andamento'),
-    cliente INT NOT NULL,
-    FOREIGN KEY(cliente) REFERENCES clientes(id_cli),
-    carro INT NOT NULL,
-    FOREIGN KEY(carro) REFERENCES carros(id_ca)
+    nome VARCHAR(32) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    carro VARCHAR(20) NOT NULL
 );
 
 /* ---------- */
 
 /* CRUD CREATE */
 
-INSERT INTO usuarios(nome, email, senha, perfil)
+INSERT INTO usuarios(nome, email, telefone, senha, perfil)
 VALUES(
     'teste',
-    'teste@email.com',
+    'testsse@email.com',
+    '32617412',
+    MD5('123'),
+    'admin'
+);
+
+INSERT INTO usuarios(nome, email, telefone, senha, perfil)
+VALUES(
+    'Ismael',
+    'ismael@email.com',
+    '32617412',
     MD5('123'),
     'admin'
 );
@@ -78,16 +83,14 @@ VALUES(
     MD5('123')
 );
 
-INSERT INTO carros(fabricante, modelo, ano, cor, chassi, valor, combustivel, id_usu)
+INSERT INTO carros(fabricante, modelo, ano, cor, combustivel, valor)
 VALUES(
 	'teste',
     'teste',
     '2022',
     'teste',
-    '12345678901234567',
-    '5000000',
     'elétrico',
-	1
+    '5000000'
 );
 
 INSERT INTO solicitacao(cliente, carro)
@@ -199,9 +202,15 @@ WHERE
 /* ---------- */
 /* DROP das tabelas */
 
-/*DROP TABLE usuarios;
+DROP TABLE usuarios;
 DROP TABLE clientes;
-DROP TABLE carro;
-DROP TABLE solicitacao;*/
+DROP TABLE carros;
+DROP TABLE solicitacao;
 
 /* ---------- */
+
+describe solicitacao;
+
+insert into solicitacao(nome, email, carro) values('bbbbbbb', 'dsdabbbbbs@gmail.com', 'Bugatti');
+
+select * from solicitacao order by data_soli;
