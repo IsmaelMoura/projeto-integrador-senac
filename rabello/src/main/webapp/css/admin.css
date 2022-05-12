@@ -89,7 +89,8 @@ a{
     position: relative;
     color: var(--grey);
     margin-bottom: 1.5rem;
-    transition: .3s
+    transition: .3s;
+    cursor: pointer;
 }
 .nav_link:hover{
     color: var(--white)

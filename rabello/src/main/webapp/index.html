@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icone.png">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Rabello</title>
@@ -42,6 +43,9 @@
             <a href="solicitacoes/solicitacao.html" class="btn acessar" type="submit"
               >Solicitação</a
             >
+            <a onclick="return sessionLogin();" class="btn cadastrar" type="submit"
+              >Acessar</a
+            >
           </div>
         </div>
       </div>
@@ -74,16 +78,16 @@
             <div
               class="col-lg-7 col-sm-12 d-flex flex-column align-items-center"
             >
-              <h2 class="text-center">Faça sua reserva</h2>
+              <h2 class="text-center">Faça sua solicitação</h2>
               <p>
-                Crie ou entre na sua conta, e faça a sua reserva para conhecer
+                Faça a sua solicitação para conhecer
                 melhor os nossos automóveis disponíveis.
               </p>
             </div>
             <div
               class="col-lg-5 col-sm-12 d-flex justify-content-center align-items-end mb-lg-4 mb-sm-0"
             >
-              <a href="solicitacao.html" class="btn acessar" type="submit"
+              <a href="solicitacoes/solicitacao.html" class="btn acessar" type="submit"
                 >Solicitação</a
               >
             </div>
@@ -210,7 +214,7 @@
         <div class="col-lg-2 col-sm-12 footer-link">
           <p class="h5">Empresa</p>
           <p class="mb-0"><a href="#about-us">Sobre nós</a></p>
-          <p><a href="solicitacoes/solicitacao.html">Faça sua reserva</a></p>
+          <p><a href="solicitacoes/solicitacao.html">Faça sua solicitação</a></p>
         </div>
         <div class="col-lg-2 col-sm-12 footer-btn">
           <a href="solicitacoes/solicitacao.html" class="btn acessar" type="submit"
@@ -247,7 +251,9 @@
       </div>
     </footer>
 
+	<script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
